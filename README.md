@@ -39,7 +39,6 @@ $ shasum -a 256 ./build/contracts/eosio.msig/eosio.msig.wasm
 
 | Protocol Feature | SHA-256 Hash
 |------------------|--------------
-| BLS_PRIMITIVES2  | 63320dd4a58212e4d32d1f58926b73ca33a247326c2a5e9fd39268d2384e011a
 | DISABLE_DEFERRED_TRXS_STAGE_1 | fce57d2331667353a0eac6b4209b67b843a7262a848af0a49a6e2fa9f6584eb4
 | DISABLE_DEFERRED_TRXS_STAGE_2 | 09e86cb0accf8d81c9e85d34bea4b925ae936626d00c984e4691186891f5bc16
 
@@ -65,7 +64,6 @@ $ shasum -a 256 ./build/contracts/eosio.msig/eosio.msig.wasm
 
 ### Step 2 - `activate.v3.3`
 - Activate protocol features:
-  - `BLS_PRIMITIVES2`
   - `DISABLE_DEFERRED_TRXS_STAGE_1`
   - `DISABLE_DEFERRED_TRXS_STAGE_2`
 - Create `eosio.wram` account with `eosio` permissions

@@ -15,16 +15,6 @@
           "permission": "active"
         }
       ],
-      "data": "63320dd4a58212e4d32d1f58926b73ca33a247326c2a5e9fd39268d2384e011a"
-    },
-    {
-      "account": "eosio",
-      "name": "activate",
-      "authorization": [{
-          "actor": "eosio",
-          "permission": "active"
-        }
-      ],
       "data": "fce57d2331667353a0eac6b4209b67b843a7262a848af0a49a6e2fa9f6584eb4"
     },
     {
