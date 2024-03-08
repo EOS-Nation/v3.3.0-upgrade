@@ -1,5 +1,7 @@
 # EOS System Contract v3.3.0 Upgrade
 
+> [Release Notes](https://github.com/eosnetworkfoundation/eos-system-contracts/releases/tag/v3.3.0)
+
 ## [Build CDT](https://github.com/AntelopeIO/cdt) (`v4.0.1`)
 
 ```bash
@@ -12,7 +14,7 @@ cmake ..
 make -j $(nproc)
 ```
 
-## Compile EOS System Contracts (`v3.3.0`)
+## [Compile EOS System Contracts](https://github.com/eosnetworkfoundation/eos-system-contracts/releases/tag/v3.3.0) (`v3.3.0`)
 
 ```bash
 gh repo clone eosnetworkfoundation/eos-system-contracts
