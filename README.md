@@ -46,6 +46,14 @@ $ shasum -a 256 ./build/contracts/eosio.msig/eosio.msig.wasm
 ## MSIG Schedules
 
 ### MSIG - [`upgrade.v3.3`](https://bloks.io/msig/eosnationftw/upgrade.v3.3)
+
+> https://bloks.io/msig/eosnationftw/upgrade.v3.3
+>
+> https://eosauthority.com/msig/eosnationftw/upgrade.v3.3?network=eos
+>
+> https://msig.app/eos/eosnationftw/upgrade.v3.3
+
+**Steps**
 - Step 1 `setcode.v3.3` - Deploy all system contracts
 - Step 2 `activate.v3.3` - Activate protocol features & create `eosio.wram`
 
