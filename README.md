@@ -23,13 +23,13 @@ export CDT_INSTALL_DIR="<path>/cdt/build"
 ```
 
 ```bash
-$ shasum -a 256 ./contracts/eosio.system/eosio.system.wasm
-2bbf23ed66d4958071a5c9725029e628941cdc1d242f9b9bb4794d7be3dd04f2  ./contracts/eosio.system/eosio.system.wasm
+$ shasum -a 256 ./build/contracts/eosio.system/eosio.system.wasm
+a2d9c10b72a586409f77be944094c161e4170bb0a7bab6e072b19161001e1930  ./build/contracts/eosio.system/eosio.system.wasm
 
-$ shasum -a 256 ./contracts/eosio.wrap/eosio.wrap.wasm
+$ shasum -a 256 ./build/contracts/eosio.wrap/eosio.wrap.wasm
 ecb8e3a5e1841acb71067e886b1c50d647d54906b232beb725bd8ac331ad78bb  ./contracts/eosio.wrap/eosio.wrap.wasm
 
-$ shasum -a 256 ./contracts/eosio.msig/eosio.msig.wasm
+$ shasum -a 256 ./build/contracts/eosio.msig/eosio.msig.wasm
 9bddf7e0444a3a5f457f88509824ec8c46dcbedbf7b15ffdf6dd03d7f8ec33e8  ./contracts/eosio.msig/eosio.msig.wasm
 ```
 
@@ -43,12 +43,12 @@ $ shasum -a 256 ./contracts/eosio.msig/eosio.msig.wasm
 
 ## MSIG Schedules
 
-### MSIG 1 - `setcode`
+### MSIG 1 - `setcode.v3.3`
 - Upgrade `setcode` & `setabi` for all system contracts
  - `eosio`
  - `eosio.msig`
  - `eosio.wrap`
 
 ### MSIG 2 - `activate`
-- Activate `DISABLE_DEFERRED_TRXS_STAGE_1` + `BLS_PRIMITIVES2` + `DISABLE_DEFERRED_TRXS_STAGE_2`
-- Create `eosio.wram` account + create `eosio.token@RAM` token
+- Activate `BLS_PRIMITIVES2` + `DISABLE_DEFERRED_TRXS_STAGE_1` + `DISABLE_DEFERRED_TRXS_STAGE_2`
+- Create `eosio.wram` account + create `eosio.token@0,RAM` token
