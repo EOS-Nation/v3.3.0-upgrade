@@ -51,6 +51,11 @@ $ shasum -a 256 ./build/contracts/eosio.msig/eosio.msig.wasm
  - `eosio.msig`
  - `eosio.wrap`
 
-### MSIG 2 - `activate`
+### MSIG 2 - `activate.v3.3`
 - Activate `BLS_PRIMITIVES2` + `DISABLE_DEFERRED_TRXS_STAGE_1` + `DISABLE_DEFERRED_TRXS_STAGE_2`
 - Create `eosio.wram` account + create `eosio.token@0,RAM` token
+
+### MSIG - `upgrade.v3.3`
+
+- MSIG 1 - Deploy all system contracts
+- MSIG 2 - Activate protocol features & create `eosio.wram`
