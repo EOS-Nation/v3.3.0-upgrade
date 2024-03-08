@@ -45,17 +45,20 @@ $ shasum -a 256 ./build/contracts/eosio.msig/eosio.msig.wasm
 
 ## MSIG Schedules
 
-### MSIG 1 - `setcode.v3.3`
+### MSIG - [`upgrade.v3.3`](https://bloks.io/msig/eosnationftw/upgrade.v3.3)
+- Step 1 `setcode.v3.3` - Deploy all system contracts
+- Step 2 `activate.v3.3` - Activate protocol features & create `eosio.wram`
+
+### Step 1 - `setcode.v3.3`
 - Upgrade `setcode` & `setabi` for all system contracts
  - `eosio`
  - `eosio.msig`
  - `eosio.wrap`
 
-### MSIG 2 - `activate.v3.3`
-- Activate `BLS_PRIMITIVES2` + `DISABLE_DEFERRED_TRXS_STAGE_1` + `DISABLE_DEFERRED_TRXS_STAGE_2`
-- Create `eosio.wram` account + create `eosio.token@0,RAM` token
-
-### MSIG - `upgrade.v3.3`
-
-- MSIG 1 - Deploy all system contracts
-- MSIG 2 - Activate protocol features & create `eosio.wram`
+### Step 2 - `activate.v3.3`
+- Activate protocol features:
+  - `BLS_PRIMITIVES2`
+  - `DISABLE_DEFERRED_TRXS_STAGE_1`
+  - `DISABLE_DEFERRED_TRXS_STAGE_2`
+- Create `eosio.wram` account with `eosio` permissions
+- Create `0,RAM` token using `eosio.token` contract with max supply `418945440768` (418GB)
