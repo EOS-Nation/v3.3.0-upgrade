@@ -1,0 +1,39 @@
+owner:
+  threshold: 1
+  accounts:
+  - permission:
+      actor: eosio
+      permission: active
+    weight: 1
+
+active:
+  threshold: 6
+  accounts:
+  - permission:
+      actor: atticlabeosb
+      permission: active
+    weight: 1
+  - permission:
+      actor: bp.defi
+      permission: active
+    weight: 1
+  - permission:
+      actor: enf
+      permission: active
+    weight: 3
+  - permission:
+      actor: eosasia11111
+      permission: active
+    weight: 1
+  - permission:
+      actor: eosio.wram
+      permission: eosio.code
+    weight: 6
+  - permission:
+      actor: eosnationftw
+      permission: active
+    weight: 1
+  - permission:
+      actor: newdex.bp
+      permission: active
+    weight: 1

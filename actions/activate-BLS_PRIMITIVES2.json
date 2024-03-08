@@ -1,0 +1,23 @@
+{
+    "expiration": "2024-03-08T16:21:06",
+    "ref_block_num": 5033,
+    "ref_block_prefix": 2540796313,
+    "max_net_usage_words": 0,
+    "max_cpu_usage_ms": 0,
+    "delay_sec": 0,
+    "context_free_actions": [],
+    "actions": [{
+        "account": "eosio",
+        "name": "activate",
+        "authorization": [{
+            "actor": "eosio",
+            "permission": "active"
+          }
+        ],
+        "data": "63320dd4a58212e4d32d1f58926b73ca33a247326c2a5e9fd39268d2384e011a"
+      }
+    ],
+    "transaction_extensions": [],
+    "signatures": [],
+    "context_free_data": []
+  }
