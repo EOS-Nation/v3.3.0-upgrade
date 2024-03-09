@@ -114,16 +114,6 @@
         }
       ],
       "data": "0000000000ea30550080349703ea305500200000"
-    },
-    {
-      "account": "eosio.token",
-      "name": "create",
-      "authorization": [{
-          "actor": "eosio.token",
-          "permission": "active"
-        }
-      ],
-      "data": "0080349703ea3055001c188b610000000052414d00000000"
     }
   ],
   "transaction_extensions": [],

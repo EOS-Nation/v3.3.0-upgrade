@@ -54,7 +54,8 @@ $ shasum -a 256 ./build/contracts/eosio.msig/eosio.msig.wasm
 
 **Steps**
 - Step 1 `setcode.v3.3` - Deploy all system contracts
-- Step 2 `activate.v3.3` - Activate protocol features & create `eosio.wram`
+- Step 2 `activate.v3.3` - Activate protocol feature
+- Step 3 `eosio.wram` - Create `eosio.wram` account
 
 ### Step 1 - `setcode.v3.3`
 - Upgrade `setcode` & `setabi` for all system contracts
@@ -64,7 +65,10 @@ $ shasum -a 256 ./build/contracts/eosio.msig/eosio.msig.wasm
 
 ### Step 2 - `activate.v3.3`
 - Activate protocol features:
+  - ~~`BLS_PRIMITIVES2`~~
   - `DISABLE_DEFERRED_TRXS_STAGE_1`
   - `DISABLE_DEFERRED_TRXS_STAGE_2`
+
+### Step 3 - `eosio.wram`
 - Create `eosio.wram` account with `eosio` permissions
-- Create `0,RAM` token using `eosio.token` contract with max supply `418945440768` (418GB)
+- ~~Create `0,RAM` token using `eosio.token` contract with max supply `418945440768` (418GB)~~
