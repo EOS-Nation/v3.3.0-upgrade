@@ -29,35 +29,13 @@
     },
     {
       "account": "eosio",
-      "name": "newaccount",
-      "authorization": [
-        {
-          "actor": "eosio",
-          "permission": "active"
-        }
-      ],
-      "data": "0000000000ea30550080349703ea30550100000000010000000000ea305500000000a8ed3232010000060000000007703055c744e4723600000000a8ed32320100000000c02d95403d00000000a8ed32320100000000000000d65400000000a8ed32320300104208c1386c305500000000a8ed323201000080349703ea305500804a1401ea30550600c0f39ad46533315500000000a8ed323201000000a8077495b89a00000000a8ed3232010000"
-    },
-    {
-      "account": "eosio",
-      "name": "buyrambytes",
-      "authorization": [
-        {
-          "actor": "eosio",
-          "permission": "active"
-        }
-      ],
-      "data": "0000000000ea30550080349703ea305500200000"
-    },
-    {
-      "account": "eosio.token",
-      "name": "create",
+      "name": "activate",
       "authorization": [{
-          "actor": "eosio.token",
+          "actor": "eosio",
           "permission": "active"
         }
       ],
-      "data": "0080349703ea3055001c188b610000000052414d00000000"
+      "data": "63320dd4a58212e4d32d1f58926b73ca33a247326c2a5e9fd39268d2384e011a"
     }
   ],
   "transaction_extensions": [],
