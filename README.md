@@ -35,14 +35,6 @@ $ shasum -a 256 ./build/contracts/eosio.msig/eosio.msig.wasm
 9bddf7e0444a3a5f457f88509824ec8c46dcbedbf7b15ffdf6dd03d7f8ec33e8  ./contracts/eosio.msig/eosio.msig.wasm
 ```
 
-## Protocol Upgrades
-
-| Protocol Feature | SHA-256 Hash
-|------------------|--------------
-| DISABLE_DEFERRED_TRXS_STAGE_1 | fce57d2331667353a0eac6b4209b67b843a7262a848af0a49a6e2fa9f6584eb4
-| DISABLE_DEFERRED_TRXS_STAGE_2 | 09e86cb0accf8d81c9e85d34bea4b925ae936626d00c984e4691186891f5bc16
-| BLS_PRIMITIVES2 | 63320dd4a58212e4d32d1f58926b73ca33a247326c2a5e9fd39268d2384e011a
-
 ## MSIG Schedules
 
 ### MSIG - [`upgrade.v3.3`](https://bloks.io/msig/eosnationftw/upgrade.v3.3)
@@ -56,7 +48,6 @@ $ shasum -a 256 ./build/contracts/eosio.msig/eosio.msig.wasm
 **Steps**
 - Step 1 `upgrade.v3.3` - Deploy all system contracts
 - Step 2 `eosio.wram` - Deploy `eosio.wram` WRAM token
-- Step 3 `activate.v3.3` - Activate protocol feature
 
 ### Step 1 - [`upgrade.v3.3` contracts](https://github.com/eosnetworkfoundation/eos-system-contracts/releases/tag/v3.3.0)
 - Upgrade `setcode` & `setabi` for all system contracts
@@ -68,9 +59,3 @@ $ shasum -a 256 ./build/contracts/eosio.msig/eosio.msig.wasm
 - Create `eosio.wram` account with `eosio` permissions
 - Create `0,RAM` token using `eosio.token` contract with max supply `418945440768` (418GB)
 - Deploy [`WRAM` token contract](https://github.com/eosnetworkfoundation/eosio.wram)
-
-### Step 3 - `activate.v3.3` (requires Leap 5.x)
-- Activate protocol features:
-  - `BLS_PRIMITIVES2`
-  - `DISABLE_DEFERRED_TRXS_STAGE_1`
-  - `DISABLE_DEFERRED_TRXS_STAGE_2`
